@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for MEDODS</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="wraper">
+        <div class="form">
+            <form class="form_body" id="form" action="#" method="post" action="#" enctype="multipart/form-data">
+                <h1 class="form_title">Отправка данных</h1>
+                <div class="form_item">
+                    <label for="formName" class="form_label">Фамилия*:</label>
+                    <input class="form_input _req" id="formName" type="text" name="name" value="" placeholder="Фамилия">
+                </div>
+                <div class="form_item">
+                    <label for="formName2" class="form_label">Имя*:</label>
+                    <input class="form_input _req" id="formName2" type="text" name="name2" value="" placeholder="Имя">
+                </div>
+                <div class="form_item">
+                    <label for="formName3" class="form_label">Отчество:</label>
+                    <input class="form_input" id="formName3" type="text" name="name3" value="" placeholder="Отчество">
+                </div>
+                <div class="form_item">
+                    <label for="date" class="form_label">Дата рождения*: </label>
+                    <input type="date" class="form_input _req" name="date">
+                </div>
+                <div class="form_item">
+                    <label for="telephone" class="form_label">Номер телефона*:</label>
+                    <input class="form_input _req" id="telephone" type="tel" name="" value="7" placeholder="Номер телефона" maxlength="11">
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Пол:</div>
+                    <div class="form_options">
+                        <div class="options_item">
+                            <input type="radio" value="man" id="man" name="gender" class="options_input" checked>
+                            <label for="man" class="options_label"><span>Мужской</span></label>
+                        </div>
+                        <div class="options_item">
+                            <input type="radio" value="woman" id="woman" name="gender" class="options_input">
+                            <label for="woman" class="options_label"><span>Женский</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Группа клиентов*:</div>
+                    <div class="form_checkbox">
+                        <div class="checkbox_item">
+                            <input type="checkbox" value="сlients" id="vip" name="vip" class="checkbox_input" checked>
+                            <label for="vip" class="checkbox_label">VIP</label>
+                        </div>
+                        <div class="checkbox_item">
+                            <input type="checkbox" value="сlients" id="problems" name="problems" class="checkbox_input">
+                            <label for="problems" class="checkbox_label">Проблемные</label>
+                        </div>
+                        <div class="checkbox_item">
+                            <input type="checkbox" value="сlients" id="oms" name="oms" class="checkbox_input">
+                            <label for="oms" class="checkbox_label">ОМС</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <div class="form_subtitle">Лечащий врач:</div>
+                    <div class="form_options">
+                        <div class="options_item">
+                            <input type="radio" value="doctor" id="doctor1" name="doctor" class="options_input" checked>
+                            <label for="doctor1" class="options_label"><span>Иванов</span></label>
+                        </div>
+                        <div class="options_item">
+                            <input type="radio" value="doctor" id="doctor2" name="doctor" class="options_input">
+                            <label for="doctor2" class="options_label"><span>Захаров</span></label>
+                        </div>
+                        <div class="options_item">
+                            <input type="radio" value="doctor" id="doctor3" name="doctor" class="options_input">
+                            <label for="doctor3" class="options_label"><span>Чернышева</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <div class="form_checkbox">
+                        <input id="form_sms" type="checkbox" name="sms" class="checkbox_input">
+                        <label for="form_sms" class="checkbox_label">Не отправлять смс</label>
+                    </div>
+                </div>
+                <div class="form_subtitle">Адрес:</div>
+                <div class="form_item">
+                    <label for="index" class="form_label">Индекс:</label>
+                    <input class="form_input" id="index" type="tel" name="" value="" placeholder="Индекс" maxlength="6">
+                </div>
+                <div class="form_item">
+                    <label for="country" class="form_label">Страна:</label>
+                    <input class="form_input" id="country" type="text" name="" value="" placeholder="Страна">
+                </div>
+                <div class="form_item">
+                    <label for="region" class="form_label">Область:</label>
+                    <input class="form_input" id="region" type="text" name="" value="" placeholder="Область">
+                </div>
+                <div class="form_item">
+                    <label for="city" class="form_label">Город*:</label>
+                    <input class="form_input _req" id="city" type="text" name="" value="" placeholder="Город">
+                </div>
+                <div class="form_item">
+                    <label for="street" class="form_label">Улица:</label>
+                    <input class="form_input" id="street" type="text" name="" value="" placeholder="Улица">
+                </div>
+                <div class="form_item">
+                    <label for="house" class="form_label">Дом:</label>
+                    <input class="form_input" id="house" type="text" name="" value="" placeholder="Дом">
+                </div>
+                <div class="form_item">
+                    <div class="form_subtitle">Документ, удостоверяющий личность:</div>
+                    <div class="options_item">
+                        <div class="form_label">Тип документа*:</div>
+                        <div class="options_item">
+                            <input type="radio" value="documents" id="passport" name="documents" class="options_input" checked>
+                            <label for="passport" class="options_label"><span>Паспорт</span></label>
+                        </div>
+                        <div class="options_item">
+                            <input type="radio" value="documents" id="certificate" name="documents" class="options_input">
+                            <label for="certificate" class="options_label"><span>Свидетельство о рождении</span></label>
+                        </div>
+                        <div class="options_item">
+                            <input type="radio" value="documents" id="drivers" name="documents" class="options_input">
+                            <label for="drivers" class="options_label"><span>Вод. удостоверение</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <label for="series" class="form_label">Серия:</label>
+                    <input class="form_input" id="series" type="tel" name="series" value="" placeholder="Серия" maxlength="6">
+                </div>
+                <div class="form_item">
+                    <label for="number" class="form_label">Номер:</label>
+                    <input class="form_input" id="number" type="tel" name="number" value="" placeholder="Номер" maxlength="6">
+                </div>
+                <div class="form_item">
+                    <label for="issued" class="form_label">Кем выдан:</label>
+                    <input class="form_input" id="issued" type="text" name="issued" value="" placeholder="Кем выдан">
+                </div>
+                <div class="form_item">
+                    <label for="passport_date" class="form_label">Дата выдачи*:</label>
+                    <input class="form_input _req" id="passport_date" type="date" name="passport_date" value="" placeholder="Дата выдачи">
+                </div>
+                <div class="form_item">
+                    <p class="form_label">*Поле обязательное для заполнения.</p>
+                </div>
+                <button class="form__button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+<script src="./script/script.js"></script>
+</body>
+</html>
